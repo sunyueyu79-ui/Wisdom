@@ -8,6 +8,7 @@
   function persist(){try{localStorage.setItem(key,JSON.stringify({size,theme}))}catch{}}
   apply();media?.addEventListener?.('change',apply);
   document.addEventListener('DOMContentLoaded',()=>{
+    if(!document.querySelector('.transcript-page'))return;
     const dialog=document.createElement('dialog');dialog.className='reading-dialog';dialog.setAttribute('aria-labelledby','reading-settings-title');
     dialog.innerHTML='<div class="reading-dialog-heading"><h2 id="reading-settings-title">读得更舒服</h2><button class="reading-settings-close" aria-label="关闭阅读设置">×</button></div><fieldset><legend>正文字号</legend><div class="reading-size-options"></div></fieldset><label class="reading-theme-label" for="reading-theme">页面外观</label><select id="reading-theme"><option value="light">浅色 · 暖白纸张</option><option value="dark">夜间 · 柔和深色</option><option value="system">跟随系统</option></select><p class="reading-settings-note">设置自动保存在当前浏览器。分享卡片继续使用适合分享的浅色版式。</p><button class="reading-reset">恢复默认设置</button>';
     document.body.append(dialog);

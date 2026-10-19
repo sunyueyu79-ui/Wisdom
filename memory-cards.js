@@ -1,7 +1,8 @@
 // Only this browser stores progress. No account or remote storage is used.
-const memoryKey='wisdom-li-lu-v1';
+const articleId=document.documentElement.dataset.articleId||'li-lu-2026';
+const memoryKey=`wisdom-article-${articleId}-v1`;
 let memory={};let storageWorks=true;
-try{memory=JSON.parse(localStorage.getItem(memoryKey)||'{}')||{};localStorage.setItem(memoryKey,JSON.stringify(memory))}catch{memory={};storageWorks=false}
+try{memory=JSON.parse(localStorage.getItem(memoryKey)||(articleId==='li-lu-2026'?localStorage.getItem('wisdom-li-lu-v1'):null)||'{}')||{};localStorage.setItem(memoryKey,JSON.stringify(memory))}catch{memory={};storageWorks=false}
 function saveMemory(patch){memory={...memory,...patch};try{localStorage.setItem(memoryKey,JSON.stringify(memory))}catch{storageWorks=false}}
 window.WisdomMemory={get:()=>memory,save:saveMemory};
 const readingSections=[...document.querySelectorAll('.transcript-page')];

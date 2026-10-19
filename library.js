@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded',()=>{
+  const cards=[...document.querySelectorAll('.library-card')],input=document.querySelector('#library-search'),status=document.querySelector('#library-status'),empty=document.querySelector('.library-empty');let topic='全部';
+  const normalize=text=>text.normalize('NFKC').toLowerCase();
+  function filter(){const terms=normalize(input.value.trim()).split(/\s+/).filter(Boolean);let count=0;cards.forEach(card=>{const searchable=normalize(card.dataset.search);const matches=(topic==='全部'||JSON.parse(card.dataset.topics).includes(topic))&&terms.every(term=>searchable.includes(term));card.hidden=!matches;if(matches)count++});empty.hidden=count>0;status.textContent=`${count} 份资料`+(topic!=='全部'?` · ${topic}`:'');document.querySelectorAll('.library-topic').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.topic===topic)))}
+  input.addEventListener('input',filter);document.querySelector('.library-search-form').addEventListener('submit',event=>{event.preventDefault();filter()});
+  document.querySelectorAll('.library-topic').forEach(button=>button.addEventListener('click',()=>{topic=button.dataset.topic;filter()}));
+  document.querySelector('.library-clear').addEventListener('click',()=>{input.value='';topic='全部';filter();input.focus()});
+  cards.forEach(card=>{try{const id=card.dataset.articleId;let progress=JSON.parse(localStorage.getItem(`wisdom-article-${id}-v1`)||'null');if(!progress&&id==='li-lu-2026')progress=JSON.parse(localStorage.getItem('wisdom-li-lu-v1')||'null');if(progress?.read?.id){const resume=card.querySelector('.library-resume');resume.hidden=false;resume.href=card.dataset.path+'#'+encodeURIComponent(progress.read.id);resume.textContent=`继续阅读 · 第 ${progress.read.page} 页 →`}}catch{}});
+  filter();
+});
