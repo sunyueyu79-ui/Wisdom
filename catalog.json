@@ -36,5 +36,25 @@
     "language": "英文",
     "path": "articles/li-lu-2026-en/",
     "sourceLabel": "哥伦比亚商学院 · Graham & Dodd Event"
+  },
+  {
+    "id": "li-lu-2024-pku",
+    "title": "全球价值投资与时代",
+    "author": "李录",
+    "type": "演讲",
+    "date": "2024-12-07",
+    "added": "2026-10-20",
+    "summary": "北大光华《价值投资》课程十周年演讲，讨论时代变化、中等收入阶段与全球价值投资。本条收录原文链接，点击前往来源网站阅读。",
+    "topics": [
+      "价值投资",
+      "全球市场",
+      "中国经济"
+    ],
+    "pages": 0,
+    "language": "中文",
+    "path": "https://munger.ayaseeri.com/sources/李录-2024年北大光华管理学院-价值投资-十周年演讲/",
+    "sourceLabel": "原文收录：查理·芒格知识库",
+    "format": "external",
+    "coverLabel": "PEKING UNIVERSITY"
   }
 ]
