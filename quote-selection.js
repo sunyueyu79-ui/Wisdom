@@ -17,7 +17,7 @@
     const text=parts.map(p=>p.text).join(' ');
     if(text.length<8)return null;
     if(text.length>280)return {error:'已选 '+text.length+' 字，请缩短至 280 字以内'};
-    if(parts.some(p=>p.speaker!=='李录'))return {error:'请仅选取李录的发言，避免跨入其他人的话'};
+    if(parts.some(p=>p.speaker!==(root.WisdomArticle?.speaker||'李录')))return {error:'请仅选取作者的正文，避免跨入其他人的引文或说明'};
     return {text,page:parts[0].page,endPage:parts[parts.length-1].page,custom:true};
   }
   root.WisdomQuoteSelection={fromSelection};

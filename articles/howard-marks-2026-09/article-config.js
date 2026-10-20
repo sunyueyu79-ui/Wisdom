@@ -1,0 +1,1 @@
+window.WisdomArticle={"author": "霍华德·马克斯", "speaker": "霍华德·马克斯", "quotes": ["目标不应该是压低利率，而应该是回应那些正在推高利率的因素。", "潜在的解决办法只有一个。我们会正视问题并采取行动吗？"], "eventLabel": "我们应该废除经济规律吗？——第三部分", "dateLabel": "2026.09.22 · Oaktree Capital Management", "excerptLabel": "备忘录中文译文摘录", "sourceNote": "Wisdom 中文翻译 · 非官方译文", "searchTerms": ["利率", "债务", "美元"]};

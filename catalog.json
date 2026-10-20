@@ -56,5 +56,43 @@
     "sourceLabel": "原文收录：查理·芒格知识库",
     "format": "external",
     "coverLabel": "PEKING UNIVERSITY"
+  },
+  {
+    "id": "howard-marks-2026-09",
+    "title": "我们应该废除经济规律吗？——第三部分",
+    "author": "霍华德·马克斯",
+    "type": "备忘录",
+    "date": "2026-09-22",
+    "added": "2026-10-20",
+    "summary": "根据英文原稿完整翻译，非橡树资本官方中文译文。讨论长期利率、财政赤字、美元与投资者面临的选择。",
+    "topics": [
+      "经济规律",
+      "利率与债务",
+      "全球市场"
+    ],
+    "pages": 7,
+    "language": "中文",
+    "path": "articles/howard-marks-2026-09/",
+    "sourceLabel": "Oaktree Capital Management · 2026.09.22",
+    "coverLabel": "OAKTREE MEMO"
+  },
+  {
+    "id": "howard-marks-2026-09-en",
+    "title": "Shall We Repeal the Laws of Economics – Part III",
+    "author": "Howard Marks",
+    "type": "备忘录",
+    "date": "2026-09-22",
+    "added": "2026-10-20",
+    "summary": "橡树资本英文备忘录全文。讨论长期利率、财政赤字、美元与投资者面临的选择。",
+    "topics": [
+      "经济规律",
+      "利率与债务",
+      "全球市场"
+    ],
+    "pages": 7,
+    "language": "英文",
+    "path": "articles/howard-marks-2026-09-en/",
+    "sourceLabel": "Oaktree Capital Management · 2026.09.22",
+    "coverLabel": "OAKTREE MEMO"
   }
 ]
