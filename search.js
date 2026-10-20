@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     clearTimeout(analyticsTimer);analyticsTimer=setTimeout(recordSearch,900);
     status.textContent=hits.length?`找到 ${hits.length} 个段落，共 ${occurrences} 处匹配。点击结果跳至正文。`:'没有找到匹配内容，请换个词试试。';
   }
+  document.querySelectorAll('[data-keyword]').forEach(button=>{const query=button.dataset.keyword;const count=entries.filter(entry=>entry.text.toLowerCase().includes(query.toLowerCase())).length;button.disabled=!count;button.setAttribute('aria-label',`搜索本文：${button.textContent}（${count} 个段落）`);const badge=document.createElement('span');badge.className='keyword-count';badge.textContent=String(count);badge.setAttribute('aria-hidden','true');button.append(badge);button.addEventListener('click',()=>{input.value=query;open();search();recordSearch()});});
   input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(search,150)});
   dialog.querySelector('form').addEventListener('submit',e=>{e.preventDefault();search();recordSearch()});
   dialog.querySelector('.search-close').addEventListener('click',()=>dialog.close());
