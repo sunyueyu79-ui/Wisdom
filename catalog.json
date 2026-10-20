@@ -7,10 +7,34 @@
     "date": "2026-10-05",
     "added": "2026-10-19",
     "summary": "从企业的价值出发，谈人工智能、全球市场，以及如何过一种不断积累的人生。第 36 届格雷厄姆—多德年度午餐会中文访谈全文。",
-    "topics": ["价值投资", "人工智能", "长期主义", "全球市场"],
+    "topics": [
+      "价值投资",
+      "人工智能",
+      "长期主义",
+      "全球市场"
+    ],
     "pages": 21,
     "language": "中文",
     "path": "articles/li-lu-2026/",
+    "sourceLabel": "哥伦比亚商学院 · Graham & Dodd Event"
+  },
+  {
+    "id": "li-lu-2026-en",
+    "title": "Value, Knowledge and Compounding · 英文原文",
+    "author": "Li Lu",
+    "type": "访谈",
+    "date": "2026-10-05",
+    "added": "2026-10-20",
+    "summary": "同场访谈的 23 页英文稿。完整保留英文内容，附中文导读与出处说明，可切换中文译稿。",
+    "topics": [
+      "价值投资",
+      "人工智能",
+      "长期主义",
+      "全球市场"
+    ],
+    "pages": 23,
+    "language": "英文",
+    "path": "articles/li-lu-2026-en/",
     "sourceLabel": "哥伦比亚商学院 · Graham & Dodd Event"
   }
 ]

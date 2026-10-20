@@ -4,10 +4,10 @@
   function language(voice){return String(voice.lang||'').replace(/_/g,'-').toLowerCase()}
   function name(voice){return String(voice.name||'').normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase()}
   function key(voice){return name(voice)+'|'+language(voice)}
-  function prepare(available,preferred){
+  function prepare(available,preferred,target='zh'){
     const groups=new Map();
     for(const voice of available){
-      if(!/^(zh|cmn)(-|$)/.test(language(voice)))continue;
+      if(!(target==='en'?/^en(-|$)/:/^(zh|cmn)(-|$)/).test(language(voice)))continue;
       const id=key(voice),existing=groups.get(id);
       if(!existing||voice.voiceURI===preferred?.voiceURI||
         (existing.voiceURI!==preferred?.voiceURI&&voice.default&&!existing.default))groups.set(id,voice);
