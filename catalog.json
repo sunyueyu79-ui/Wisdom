@@ -38,6 +38,28 @@
     "sourceLabel": "哥伦比亚商学院 · Graham & Dodd Event"
   },
   {
+    "id": "li-lu-2026-parallel",
+    "title": "价值、知识与复利 · 中英对照",
+    "author": "李录 Li Lu",
+    "type": "访谈",
+    "date": "2026-10-05",
+    "added": "2026-10-27",
+    "summary": "学校官网中英文稿按内容整理为 245 组对照，保留发言顺序与原稿页码。支持双语搜索、单语切换和主题导航，方便学习英语。",
+    "topics": [
+      "价值投资",
+      "人工智能",
+      "长期主义",
+      "全球市场"
+    ],
+    "pages": 0,
+    "segments": 245,
+    "format": "transcript",
+    "language": "中英对照",
+    "path": "articles/li-lu-2026-parallel/",
+    "sourceLabel": "哥伦比亚商学院 · Graham & Dodd Event",
+    "coverLabel": "BILINGUAL EDITION"
+  },
+  {
     "id": "li-lu-2024-pku",
     "title": "全球价值投资与时代",
     "author": "李录",
