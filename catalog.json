@@ -94,5 +94,25 @@
     "path": "articles/howard-marks-2026-09-en/",
     "sourceLabel": "Oaktree Capital Management · 2026.09.22",
     "coverLabel": "OAKTREE MEMO"
+  },
+  {
+    "id": "harari-ai-2026",
+    "title": "AI、信任与人类判断 · 中英对照导读",
+    "author": "尤瓦尔·赫拉利",
+    "type": "访谈",
+    "format": "guide",
+    "date": "2026-10-17",
+    "added": "2026-10-27",
+    "summary": "Hyde Park Civilizace 访谈的简短中英对应导读，配有完整节目入口。非完整逐字稿或全文翻译。",
+    "topics": [
+      "人工智能",
+      "信任",
+      "终身学习"
+    ],
+    "pages": 0,
+    "language": "中英对照",
+    "path": "articles/harari-ai-2026/",
+    "sourceLabel": "Česká televize · Hyde Park Civilizace",
+    "coverLabel": "HYDE PARK CIVILIZACE"
   }
 ]
