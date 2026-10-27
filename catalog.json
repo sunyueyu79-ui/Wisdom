@@ -125,7 +125,7 @@
     "format": "transcript",
     "date": "2026-10-17",
     "added": "2026-10-27",
-    "summary": "152 段中英对应语境修订版：修复明显转写错误，让阅读更连贯。支持双语搜索与单语切换，保留时间戳；缺段待补，尚未逐句听校。",
+    "summary": "156 组中英对应语境修订版，已补充 45—48 分钟内容。修复明显转写错误，支持双语搜索与单语切换；补录措辞根据上下文推定，尚未逐句听校。",
     "topics": [
       "人工智能",
       "信任",
@@ -136,6 +136,6 @@
     "path": "articles/harari-ai-2026/",
     "sourceLabel": "Česká televize · Hyde Park Civilizace",
     "coverLabel": "HYDE PARK CIVILIZACE",
-    "segments": 152
+    "segments": 156
   }
 ]
