@@ -97,13 +97,13 @@
   },
   {
     "id": "harari-ai-2026",
-    "title": "AI、信任与人类判断 · 中英对照导读",
+    "title": "AI、信任与人类判断 · 中英对照",
     "author": "尤瓦尔·赫拉利",
     "type": "访谈",
-    "format": "guide",
+    "format": "transcript",
     "date": "2026-10-17",
     "added": "2026-10-27",
-    "summary": "Hyde Park Civilizace 访谈的简短中英对应导读，配有完整节目入口。非完整逐字稿或全文翻译。",
+    "summary": "用户提供英文文字稿的 152 段中英对应翻译，保留时间戳，支持中英文搜索和单语切换；标明转写疑点与原稿缺段。",
     "topics": [
       "人工智能",
       "信任",
@@ -113,6 +113,7 @@
     "language": "中英对照",
     "path": "articles/harari-ai-2026/",
     "sourceLabel": "Česká televize · Hyde Park Civilizace",
-    "coverLabel": "HYDE PARK CIVILIZACE"
+    "coverLabel": "HYDE PARK CIVILIZACE",
+    "segments": 152
   }
 ]
